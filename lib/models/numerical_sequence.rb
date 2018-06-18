@@ -45,6 +45,7 @@ class NumericalSequence
     calculate(count - active_elements.count)
   end
 
+  # TODO: move all caching logic to Cachable concern
   def cache(count)
     @cached_elements = active_elements.pop(count)
     return
